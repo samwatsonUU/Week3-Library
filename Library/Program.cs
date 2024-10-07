@@ -1,10 +1,19 @@
 ﻿
 class Book
 {
-
-    String Title;
+ 
+    string Title;
     string Author;
     string ISBN;
+
+    public Book (string bookTitle, string bookAuthor, string bookISBN)
+    {
+
+        Title = bookTitle;
+        Author = bookAuthor;
+        ISBN = bookISBN;
+
+    }
 
     void DisplayInfo()
     {
@@ -18,20 +27,8 @@ class Book
     static void Main(String[] args)
     {
 
-        Book book = new Book();
-
-        book.Title = "C# for beginners";
-        book.Author = "Bill Gates";
-        book.ISBN = "12345678";
-
-        Book book1 = new Book();
-
-        book1.Title = "OOP";
-        book1.Author = "Sam Watson";
-        book1.ISBN = "9101111213";
-
-        book.DisplayInfo();
-        book1.DisplayInfo();
+        Book samsBook = new Book("Sam's Book", "Sam Watson", "77777");
+        samsBook.DisplayInfo();
 
     }
 
