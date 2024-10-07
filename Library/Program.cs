@@ -1,29 +1,9 @@
 ﻿
-class Book
+using Library;
+
+class Program
 {
- 
-    string Title;
-    string Author;
-    string ISBN;
 
-    public Book (string bookTitle, string bookAuthor, string bookISBN)
-    {
-
-        Title = bookTitle;
-        Author = bookAuthor;
-        ISBN = bookISBN;
-
-    }
-
-    void DisplayInfo()
-    {
-
-        Console.WriteLine($"Book title: {Title}");
-        Console.WriteLine($"Book author: {Author}");
-        Console.WriteLine($"Book ISBN: {ISBN}");
-        Console.WriteLine("");
-
-    }
     static void Main(String[] args)
     {
 
@@ -31,6 +11,5 @@ class Book
         samsBook.DisplayInfo();
 
     }
-
 
 }
