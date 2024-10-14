@@ -1,7 +1,7 @@
 ﻿
 namespace Library
 {
-    class Member
+    public class Member
     {
 
         private string name;
